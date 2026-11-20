@@ -13,6 +13,8 @@
 <meta property="og:description" content="카시트·유모차·유아용품을 브랜드별로 실물 비교하는 남양주 다산 유아동 전문 매장. 3,000대 무료주차 · 1층 직통 · 전국 배송.">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:url" content="https://babyhausnyj.co.kr/">
+<meta property="og:image" content="https://babyhausnyj.co.kr/images/store-front.jpg">
+<meta property="og:image:alt" content="베이비하우스 남양주점 매장 외관">
 <link rel="canonical" href="https://babyhausnyj.co.kr/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23D9614A'/%3E%3Ctext x='50' y='68' font-size='54' font-family='sans-serif' font-weight='bold' fill='%23fff' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
 <style>
@@ -104,6 +106,15 @@
   .sec-title{font-size:clamp(21px,4.6vw,29px);font-weight:800;letter-spacing:-.03em;line-height:1.35;margin-top:6px}
   .sec-desc{color:var(--muted);font-size:14.5px;margin-top:8px;max-width:40em}
 
+  /* ---------- gallery ---------- */
+  .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:22px}
+  .shot{margin:0;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow-sm);transition:box-shadow .18s ease,transform .18s ease}
+  .shot:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+  .shot .ph{aspect-ratio:3 / 4;background:#F4EDE5;overflow:hidden}
+  .shot img{width:100%;height:100%;object-fit:cover}
+  .shot figcaption{padding:10px 12px 11px;font-size:13px;font-weight:800;letter-spacing:-.02em;color:var(--ink);line-height:1.35}
+  .shot figcaption span{display:block;font-size:11.5px;font-weight:600;color:var(--muted);letter-spacing:0;margin-top:3px;line-height:1.45}
+
   /* ---------- info cards ---------- */
   .cards{display:grid;grid-template-columns:1fr;gap:12px;margin-top:20px}
   .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow-sm)}
@@ -194,6 +205,7 @@
     .hero-cta .btn{min-width:0;flex:1 1 44%}
   }
   @media (min-width:640px){
+    .gallery{grid-template-columns:repeat(3,1fr);gap:14px}
     .facts{grid-template-columns:repeat(4,1fr)}
     .cards{grid-template-columns:1fr 1fr}
     .channels{grid-template-columns:repeat(4,1fr)}
@@ -209,6 +221,7 @@
   }
   @media (prefers-reduced-motion:reduce){
     *{transition:none !important;animation:none !important}
+    .shot:hover{transform:none}
   }
 </style>
 </head>
@@ -308,6 +321,42 @@
     </div>
   </div>
 </div>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery" aria-labelledby="gallery-title">
+  <div class="wrap">
+    <p class="sec-label">Store Gallery</p>
+    <h2 class="sec-title" id="gallery-title">매장 둘러보기</h2>
+    <p class="sec-desc">베이비하우스 남양주점의 실제 매장 사진입니다. 유모차·카시트·하이체어부터 출산용품까지, 매장에서 직접 펼쳐 보고 비교해 보세요.</p>
+
+    <div class="gallery">
+      <figure class="shot">
+        <div class="ph"><img src="images/store-front.jpg" alt="베이비하우스 남양주점 외관 정면 — 도로에서 바라본 BABY HAUS 간판과 1층 유리창 매장" width="900" height="1200" loading="lazy" decoding="async"></div>
+        <figcaption>외관 정면<span>도로에서 바라본 BABY HAUS 간판과 1층 매장</span></figcaption>
+      </figure>
+      <figure class="shot">
+        <div class="ph"><img src="images/store-exterior.jpg" alt="베이비하우스 남양주점 외관 — BABY HAUS 간판과 매장 전화번호 안내판, 유리창 너머 유모차 진열" width="600" height="800" loading="lazy" decoding="async"></div>
+        <figcaption>외관 간판<span>BABY HAUS 간판과 매장 전화번호가 보이는 입구</span></figcaption>
+      </figure>
+      <figure class="shot">
+        <div class="ph"><img src="images/store-hall.jpg" alt="베이비하우스 남양주점 매장 중앙 전경 — 샹들리에 아래로 유모차 전시존이 이어지는 넓은 매장" width="600" height="800" loading="lazy" decoding="async"></div>
+        <figcaption>매장 중앙 전경<span>샹들리에 아래로 이어지는 넓은 전시 공간</span></figcaption>
+      </figure>
+      <figure class="shot">
+        <div class="ph"><img src="images/store-strollers.jpg" alt="유모차·카시트 전시존 — 쌍둥이 유모차와 여러 브랜드 유모차·카시트를 진열한 매장" width="600" height="800" loading="lazy" decoding="async"></div>
+        <figcaption>유모차 · 카시트 존<span>쌍둥이 유모차까지 직접 펼쳐 볼 수 있는 존</span></figcaption>
+      </figure>
+      <figure class="shot">
+        <div class="ph"><img src="images/store-highchair.jpg" alt="하이체어 존 — HIGH CHAIR 표시와 유아 하이체어·카시트가 진열된 매장 구역" width="900" height="1200" loading="lazy" decoding="async"></div>
+        <figcaption>하이체어 · 카시트 존<span>하이체어와 유아 카시트를 함께 비교하는 구역</span></figcaption>
+      </figure>
+      <figure class="shot">
+        <div class="ph"><img src="images/store-mamazone.jpg" alt="마마존 — 젖병·소독기·분유포트 등 출산·육아용품을 진열한 매장 구역" width="600" height="800" loading="lazy" decoding="async"></div>
+        <figcaption>출산용품 · 마마존<span>젖병 · 소독기 · 소형가전까지 모아 둔 구역</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
 
 <!-- ============ STORE INFO ============ -->
 <section id="info" aria-labelledby="info-title">
@@ -592,6 +641,14 @@
       "opens": "10:00",
       "closes": "20:00"
     }
+  ],
+  "image": [
+    "https://babyhausnyj.co.kr/images/store-front.jpg",
+    "https://babyhausnyj.co.kr/images/store-exterior.jpg",
+    "https://babyhausnyj.co.kr/images/store-hall.jpg",
+    "https://babyhausnyj.co.kr/images/store-strollers.jpg",
+    "https://babyhausnyj.co.kr/images/store-highchair.jpg",
+    "https://babyhausnyj.co.kr/images/store-mamazone.jpg"
   ],
   "sameAs": [
     "https://www.instagram.com/babyhaus_nyj/",
